@@ -1,0 +1,32 @@
+#### OBTENER TODOS LOS SEGUIMIENTOS
+GET http://127.0.0.1:8003/seguimientos
+
+#### CREAR SEGUIMIENTO
+POST http://127.0.0.1:8003/seguimiento
+Content-Type: application/json
+
+{
+  "incapacidad_id": 1,
+  "fecha": "2026-06-01",
+  "comentario": "Incapacidad registrada correctamente",
+  "estado": "registrada",
+  "usuario_responsable": "gestionhumana"
+}
+
+#### MOSTRAR SEGUIMIENTO POR ID
+GET http://127.0.0.1:8003/seguimiento/1
+
+#### MODIFICAR SEGUIMIENTO
+PUT http://127.0.0.1:8003/seguimiento/1
+Content-Type: application/json
+
+{
+  "comentario": "Seguimiento actualizado",
+  "estado": "cerrado"
+}
+
+#### ELIMINAR SEGUIMIENTO
+DELETE http://127.0.0.1:8003/seguimiento/1
+
+#### OBTENER SEGUIMIENTOS POR INCAPACIDAD
+GET http://127.0.0.1:8003/seguimientos/incapacidad/1

@@ -1,0 +1,32 @@
+#### OBTENER TODOS LOS EMPLEADOS
+GET http://127.0.0.1:8001/empleados
+
+#### CREAR EMPLEADO
+POST http://127.0.0.1:8001/empleado
+Content-Type: application/json
+
+{
+  "nombres": "Carlos",
+  "apellidos": "Ramirez",
+  "documento": "1000123456",
+  "correo": "carlos@empresa.com",
+  "telefono": "3001234567",
+  "cargo": "Analista",
+  "area": "Tecnologia",
+  "fecha_ingreso": "2026-05-30"
+}
+
+#### MOSTRAR EMPLEADO POR ID
+GET http://127.0.0.1:8001/empleado/1
+
+#### MODIFICAR EMPLEADO
+PUT http://127.0.0.1:8001/empleado/1
+Content-Type: application/json
+
+{
+  "cargo": "Senior Analista",
+  "area": "Innovación"
+}
+
+#### ELIMINAR EMPLEADO
+DELETE http://127.0.0.1:8001/empleado/1

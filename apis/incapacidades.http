@@ -1,0 +1,33 @@
+#### OBTENER TODAS LAS INCAPACIDADES
+GET http://127.0.0.1:8002/incapacidades
+
+#### CREAR INCAPACIDAD
+POST http://127.0.0.1:8002/incapacidad
+Content-Type: application/json
+
+{
+  "empleado_id": 1,
+  "fecha_inicio": "2026-06-01",
+  "fecha_fin": "2026-06-05",
+  "tipo": "enfermedad_general",
+  "diagnostico_general": "Infección respiratoria",
+  "entidad_medica": "Clinica Central",
+  "dias_incapacidad": 5
+}
+
+#### MOSTRAR INCAPACIDAD POR ID
+GET http://127.0.0.1:8002/incapacidad/1
+
+#### MODIFICAR INCAPACIDAD
+PUT http://127.0.0.1:8002/incapacidad/1
+Content-Type: application/json
+
+{
+  "estado": "aprobada"
+}
+
+#### ELIMINAR INCAPACIDAD
+DELETE http://127.0.0.1:8002/incapacidad/1
+
+#### FILTRAR INCAPACIDADES POR ESTADO
+GET http://127.0.0.1:8002/incapacidades/filtrar?estado=aprobada
