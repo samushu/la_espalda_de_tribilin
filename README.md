@@ -1,11 +1,16 @@
 # la_espalda_de_tribilin
 
+
+
 Configuración inicial
 1. Clona el repositorio:
 
 git clone https://github.com/samushu/la_espalda_de_tribilin.git
 
+cd C:\Users\samia\Documents\la_espalda_de_tribilin
+
 2. Instala las dependencias en cada microservicio:
+
 
 2.1 cd ms_auth
 composer install
