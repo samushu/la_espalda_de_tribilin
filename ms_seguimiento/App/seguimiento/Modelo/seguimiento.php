@@ -1,4 +1,5 @@
 <?php
+// Modeloooo de Seguimiento
 namespace App\seguimiento\Modelo;
 
 use Illuminate\Database\Eloquent\Model;

@@ -1,4 +1,5 @@
 <?php
+// Modelo de Incapacidad
 namespace App\incapacidad\Modelo;
 
 use Illuminate\Database\Eloquent\Model;
