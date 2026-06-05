@@ -1,14 +1,18 @@
-use Psr\Http\Message\ResponseInterface as Response;
-use Psr\Http\Message\ServerRequestInterface as Request;
+<?php
 use Slim\Factory\AppFactory;
+use App\sprints\Modelos\sprint;
 
 require __DIR__ . '/../vendor/autoload.php';
+require __DIR__ . '/../App/Confi/ConDB.php';
+
+$cors = require __DIR__ . '/../Middlewars/CorsMiddlewar.php';
+
+$empleadosEndpoints   = require __DIR__ . '/../App/empleados/Presentacion/Routers/Endpoints.php';
 
 $app = AppFactory::create();
 
-$app->get('/', function (Request $request, Response $response, $args) {
-    $response->getBody()->write("Hello world!");
-    return $response;
-});
+$cors($app);
+
+$empleadosEndpoints($app);
 
 $app->run();

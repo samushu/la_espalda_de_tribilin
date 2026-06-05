@@ -1,4 +1,5 @@
 <?php
+// Modelo de Usuario para la autenticación
 namespace App\auth\Modelo;
 
 use Illuminate\Database\Eloquent\Model;

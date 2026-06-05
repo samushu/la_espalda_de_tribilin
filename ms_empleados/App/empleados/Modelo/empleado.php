@@ -1,4 +1,5 @@
 <?php
+// Modelo de Empleado
 namespace App\empleados\Modelo;
 
 use Illuminate\Database\Eloquent\Model;
