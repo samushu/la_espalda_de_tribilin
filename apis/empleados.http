@@ -6,12 +6,12 @@ POST http://127.0.0.1:8001/empleado
 Content-Type: application/json
 
 {
-  "nombres": "Carlos",
-  "apellidos": "Ramirez",
-  "documento": "1000123456",
-  "correo": "carlos@empresa.com",
-  "telefono": "3001234567",
-  "cargo": "Analista",
+  "nombres": "Micahel",
+  "apellidos": "Cruz",
+  "documento": "1051676765",
+  "correo": "micahel@empresa.com",
+  "telefono": "3128937162",
+  "cargo": "Disenador",
   "area": "Tecnologia",
   "fecha_ingreso": "2026-05-30"
 }
@@ -29,4 +29,4 @@ Content-Type: application/json
 }
 
 #### ELIMINAR EMPLEADO
-DELETE http://127.0.0.1:8001/empleado/1
+DELETE http://127.0.0.1:8001/empleado/4
