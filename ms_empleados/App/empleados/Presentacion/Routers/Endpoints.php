@@ -1,7 +1,7 @@
 <?php
 
 use Slim\App;
-use App\empleados\Presentacion\Repositorios\empleadoRepositorio;
+use App\empleados\Presentacion\Repositorio\empleadoRepositorio;
 
 return function (App $app) {
     $app->get('/empleados', [empleadoRepositorio::class, 'allempleado']);

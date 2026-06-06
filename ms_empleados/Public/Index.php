@@ -1,6 +1,6 @@
 <?php
 use Slim\Factory\AppFactory;
-use App\empleados\Modelos\empleado;
+use App\empleados\Modelo\Empleado;
 
 require __DIR__ . '/../vendor/autoload.php';
 require __DIR__ . '/../App/Confi/ConDB.php';

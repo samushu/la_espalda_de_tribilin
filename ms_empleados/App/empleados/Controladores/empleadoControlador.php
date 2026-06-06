@@ -24,8 +24,8 @@ class empleadoControlador {
             $empleado->area = $data['area'];
             $empleado->fecha_ingreso = $data['fecha_ingreso'];
             $empleado->estado = $data['estado'] ?? 'activo';
-            $empleado->created_at = $data['created_at'] ?? now();
-            $empleado->updated_at = $data['updated_at'] ?? now();
+            $empleado->created_at = $data['created_at'] ?? date('Y-m-d H:i:s');
+            $empleado->updated_at = $data['updated_at'] ?? date('Y-m-d H:i:s');
             $empleado->save();
             return $empleado->toJson();
         } catch (Exception $e) {
