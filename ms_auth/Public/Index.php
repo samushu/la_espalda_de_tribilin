@@ -1,6 +1,6 @@
 <?php
 use Slim\Factory\AppFactory;
-use App\auth\Modelos\auth;
+use App\auth\Modelo\Usuario;
 
 require __DIR__ . '/../vendor/autoload.php';
 require __DIR__ . '/../App/Confi/ConDB.php';

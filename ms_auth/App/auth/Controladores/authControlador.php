@@ -23,8 +23,8 @@ class authControlador {
             $usuario->token = $data['token'] ?? null;
             $usuario->sesion_activa = $data['sesion_activa'] ?? false;
             $usuario->estado = $data['estado'] ?? 'activo';
-            $usuario->created_at = $data['created_at'] ?? now();
-            $usuario->updated_at = $data['updated_at'] ?? now();
+            $usuario->created_at = $data['created_at'] ?? date('Y-m-d H:i:s');
+            $usuario->updated_at = $data['updated_at'] ?? date('Y-m-d H:i:s');
             $usuario->save();
             return $usuario->toJson();
         } catch (Exception $e) {

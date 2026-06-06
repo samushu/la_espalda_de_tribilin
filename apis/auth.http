@@ -51,4 +51,4 @@ Content-Type: application/json
 }
 
 #### ELIMINAR USUARIO
-DELETE http://127.0.0.1:8000/usuario/1
+DELETE http://127.0.0.1:8000/usuario/3
