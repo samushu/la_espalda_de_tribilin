@@ -73,7 +73,7 @@ class authRepositorio
         try {
             $data = json_decode($req->getBody()->getContents(), true);
             $controller = new authControlador();
-            $login = $controller->login($data);
+            $login = $controller->loginusuario($data);
             $resp->getBody()->write($login);
             return $resp->withStatus(200)->withHeader("Content-Type", "application/json");
         } catch (Exception $ex) {
