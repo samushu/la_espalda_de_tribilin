@@ -23,8 +23,8 @@ class incapacidadControlador {
             $incapacidad->observaciones = $data['observaciones'] ?? null;
             $incapacidad->dias_incapacidad = $data['dias_incapacidad'];
             $incapacidad->estado = $data['estado'] ?? 'registrada';
-            $incapacidad->created_at = $data['created_at'] ?? now();
-            $incapacidad->updated_at = $data['updated_at'] ?? now();
+            $incapacidad->created_at = $data['created_at'] ?? date('Y-m-d H:i:s');
+            $incapacidad->updated_at = $data['updated_at'] ?? date('Y-m-d H:i:s');
             $incapacidad->save();
             return $incapacidad->toJson();
         } catch (Exception $e) {
