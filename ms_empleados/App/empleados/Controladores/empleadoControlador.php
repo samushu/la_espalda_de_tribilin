@@ -1,4 +1,5 @@
 <?php
+// Controladooooor de logica de empleados
 namespace App\empleados\Controladores;
 
 use App\empleados\Modelo\Empleado;
