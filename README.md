@@ -64,7 +64,7 @@ php -S 127.0.0.1:8000 -t ms_auth/Public ms_auth/Public/index.php
 php -S 127.0.0.1:8001 -t ms_empleados/Public ms_empleados/Public/index.php
 
 5.3 # Incapacidad
-php -S 127.0.0.1:8002 -t ms_incapacidades/Public ms_incapacidad/Public/index.php
+php -S 127.0.0.1:8002 -t ms_incapacidades/Public ms_incapacidades/Public/index.php
 
 5.4 # Seguimiento
 php -S 127.0.0.1:8003 -t ms_seguimiento/Public ms_seguimiento/Public/index.php
