@@ -1,5 +1,5 @@
 <?php
-namespace App\seguimiento\Presentacion\Repositorios;
+namespace App\seguimiento\Presentacion\Repositorio;
 
 use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
