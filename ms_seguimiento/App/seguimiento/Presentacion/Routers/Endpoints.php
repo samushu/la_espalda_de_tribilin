@@ -1,7 +1,7 @@
 <?php
 
 use Slim\App;
-use App\seguimiento\Presentacion\Repositorios\seguimientoRepositorio;
+use App\seguimiento\Presentacion\Repositorio\seguimientoRepositorio;
 
 return function (App $app) {
     $app->get('/seguimientos', [seguimientoRepositorio::class, 'allseguimiento']);

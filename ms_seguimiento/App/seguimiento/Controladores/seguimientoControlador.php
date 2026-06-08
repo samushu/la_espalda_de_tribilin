@@ -19,8 +19,8 @@ class seguimientoControlador {
             $seguimiento->comentario = $data['comentario'];
             $seguimiento->estado = $data['estado'];
             $seguimiento->usuario_responsable = $data['usuario_responsable'];
-            $seguimiento->created_at = $data['created_at'] ?? now();
-            $seguimiento->updated_at = $data['updated_at'] ?? now();
+            $seguimiento->created_at = $data['created_at'] ?? date('Y-m-d H:i:s');
+            $seguimiento->updated_at = $data['updated_at'] ?? date('Y-m-d H:i:s');
             $seguimiento->save();
             return $seguimiento->toJson();
         } catch (Exception $e) {
