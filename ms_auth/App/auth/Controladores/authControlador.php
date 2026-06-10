@@ -1,5 +1,5 @@
 <?php
-// Controladoooooor para manejar la lógica de autenticación y gestión de usuarios
+// Controladooooor para manejar la lógica de autenticación y gestión de usuarios
 namespace App\auth\Controladores;
 
 use App\auth\Modelo\Usuario;
