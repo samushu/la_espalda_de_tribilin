@@ -1,5 +1,5 @@
 -- =========================================================
--- 🧩 Microservicio: ms-auth
+-- Microservicio: ms-auth
 -- =========================================================
 CREATE DATABASE IF NOT EXISTS ms_auth;
 USE ms_auth;

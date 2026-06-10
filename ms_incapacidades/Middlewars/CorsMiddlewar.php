@@ -1,5 +1,3 @@
-// CORSSSS
-
 <?php
 use Psr\Http\Message\ServerRequestInterface as Request;
 
