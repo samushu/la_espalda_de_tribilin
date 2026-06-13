@@ -9,7 +9,7 @@ git clone https://github.com/samushu/la_espalda_de_tribilin.git
 
 cd C:\Users\samia\Documents\la_espalda_de_tribilin
 
-2. Instala las dependencias en cada microservicio:
+2. Instala las dependencias en cada microservicio: (revisar si php esta mas de version 8,2)
 
 
 2.1 cd ms_auth
@@ -18,11 +18,16 @@ composer install
 2.2 cd ../ms_empleados
 composer install
 
-2.3 cd ../ms_incapacidad
+2.3 cd ../ms_incapacidades
 composer install
 
 2.4 cd ../ms_seguimiento
 composer install
+
+sino esta actualizada instalar php 8,3+
+clonar el php.ini antiguo
+reenombrar el archivo php x86 a php y reemplzarlo en xampp
+copiar el php.ini antiguo para no afectar dependencias
 
 3. Asegúrate de tener MySQL activo en XAMPP y las bases de datos creadas:
 
